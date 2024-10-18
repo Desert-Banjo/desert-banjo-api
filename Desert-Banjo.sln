@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Banjo.Api", "Desert-Banjo.Api\Desert-Banjo.Api.csproj", "{CF9DA289-B7D1-4989-81E8-4EA9F6CA11C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Banjo.Domain", "Desert-Banjo.Domain\Desert-Banjo.Domain.csproj", "{86CAFCB5-FDCF-4374-82D2-11B5C976278A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF9DA289-B7D1-4989-81E8-4EA9F6CA11C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9DA289-B7D1-4989-81E8-4EA9F6CA11C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9DA289-B7D1-4989-81E8-4EA9F6CA11C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9DA289-B7D1-4989-81E8-4EA9F6CA11C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86CAFCB5-FDCF-4374-82D2-11B5C976278A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86CAFCB5-FDCF-4374-82D2-11B5C976278A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86CAFCB5-FDCF-4374-82D2-11B5C976278A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86CAFCB5-FDCF-4374-82D2-11B5C976278A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
