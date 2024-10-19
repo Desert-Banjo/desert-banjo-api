@@ -34,6 +34,7 @@ namespace Desert_Banjo.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                
             });
         }
      }
