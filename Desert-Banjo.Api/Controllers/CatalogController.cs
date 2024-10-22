@@ -4,7 +4,7 @@ using Desert.Banjo.Domain.Catalog;
 namespace Desert.Banjo.Api.Controllers
 {
     [ApiController]
-    [Route("/")]
+    [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
         [HttpGet]

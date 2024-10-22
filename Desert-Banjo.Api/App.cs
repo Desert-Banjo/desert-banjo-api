@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Desert_Banjo.Api
+namespace Desert.Banjo.Api
 {
     
     public class Program
