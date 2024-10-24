@@ -22,11 +22,17 @@ public Item(string name, string description, string brand, decimal price)
         {
             throw new ArgumentNullException(name);
         }
-
+        
+        if (string.IsNullOrEmpty(description))
+        {
+            throw new ArgumentException(description);
+        }
+        
         if (string.IsNullOrEmpty(brand))
         {
             throw new ArgumentException(brand);
         }
+
         if(price < 0.00m) 
         {
             throw new ArgumentException("Price must be greater than zero.");
