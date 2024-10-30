@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Desert.Banjo.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Desert.Banjo.Api
 {
@@ -18,6 +21,9 @@ namespace Desert.Banjo.Api
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+            services.AddDbContext<StoreContext>(options => 
+                options.UseSqlite("Data Source=../Registrar.sqlite", 
+                    b => b.MigrationsAssembly("Desert.Banjo.Api")));
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
