@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Banjo.Api", "Desert-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Banjo.Domain", "Desert-Banjo.Domain\Desert-Banjo.Domain.csproj", "{86CAFCB5-FDCF-4374-82D2-11B5C976278A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Banjo.Data", "Desert-Banjo.Data\Desert-Banjo.Data.csproj", "{E74E34DB-DCBA-4784-8B6A-8CE0F6110000}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{86CAFCB5-FDCF-4374-82D2-11B5C976278A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86CAFCB5-FDCF-4374-82D2-11B5C976278A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86CAFCB5-FDCF-4374-82D2-11B5C976278A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E74E34DB-DCBA-4784-8B6A-8CE0F6110000}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E74E34DB-DCBA-4784-8B6A-8CE0F6110000}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E74E34DB-DCBA-4784-8B6A-8CE0F6110000}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E74E34DB-DCBA-4784-8B6A-8CE0F6110000}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

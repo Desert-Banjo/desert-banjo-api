@@ -7,7 +7,7 @@ using Desert.Banjo.Data;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Desert.Banjo.Api
+namespace Desert_Banjo.Api
 {
     public class Startup
     {
