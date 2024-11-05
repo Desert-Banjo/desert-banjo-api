@@ -2,9 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>Desert_Banjo.Domain</RootNamespace>
+    <RootNamespace>Desert.Banjo.Domain</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>Desert.Banjo.Domain</AssemblyName>
   </PropertyGroup>
 
 </Project>

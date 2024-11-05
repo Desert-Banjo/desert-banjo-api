@@ -1,8 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Desert.Banjo.Domain.Catalog;
 using Desert.Banjo.Data;
-using Microsoft.EntityFrameworkCore;
-
 
 namespace Desert.Banjo.Api.Controllers
 {

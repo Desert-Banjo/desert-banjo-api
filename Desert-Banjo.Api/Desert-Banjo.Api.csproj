@@ -4,7 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Desert_Banjo.Api</RootNamespace>
+    <RootNamespace>Desert.Banjo.Api</RootNamespace>
+    <AssemblyName>Desert.Banjo.Api</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

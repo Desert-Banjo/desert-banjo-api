@@ -1,6 +1,6 @@
-@Desert_Banjo.Api_HostAddress = http://localhost:5019
+@Desert.Banjo.Api_HostAddress = http://localhost:5019
 
-GET [{Desert_Banjo.Api_HostAddress}]/weatherforecast/
+GET [{Desert.Banjo.Api_HostAddress}]/weatherforecast/
 Accept: application/json
 
 ###

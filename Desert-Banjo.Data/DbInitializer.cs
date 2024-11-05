@@ -1,6 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using Desert.Banjo.Domain.Catalog;
 using Desert.Banjo.Data;
-using Microsoft.EntityFrameworkCore;
+
 namespace Desert.Banjo.Data
 {
     public static class DbInitializer

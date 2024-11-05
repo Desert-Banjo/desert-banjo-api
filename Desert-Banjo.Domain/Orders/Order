@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
-namespace DESERT-BANJO.Domain.Orders{
+
+namespace Desert.Banjo.Domain.Orders{
     public class Order
 {
     public int Id { get; set; }

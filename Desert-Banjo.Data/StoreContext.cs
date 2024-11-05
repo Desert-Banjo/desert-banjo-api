@@ -1,6 +1,6 @@
-﻿using Desert.Banjo.Domain.Catalog;
+﻿using Microsoft.EntityFrameworkCore;
+using Desert.Banjo.Domain.Catalog;
 using Desert.Banjo.Data;
-using Microsoft.EntityFrameworkCore;
 using Desert.Banjo.Domain.Orders;
 
 namespace Desert.Banjo.Data

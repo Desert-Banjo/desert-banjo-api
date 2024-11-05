@@ -1,13 +1,12 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Desert.Banjo.Data;
-using Microsoft.EntityFrameworkCore;
 
-
-namespace Desert_Banjo.Api
+namespace Desert.Banjo.Api
 {
     public class Startup
     {
@@ -32,7 +31,7 @@ namespace Desert_Banjo.Api
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json",
-"Desert_Banjo.Api v1"));
+"Desert.Banjo.Api v1"));
             }
             app.UseHttpsRedirection();
             app.UseRouting();
