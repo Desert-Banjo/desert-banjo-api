@@ -11,8 +11,8 @@ namespace Desert.Banjo.Data
             : base(options)
         { }
 
-        public DbSet<Item> Items { get ; set; }
-        public DbSet<OrderItem> Orders {get; set;}//should this be Order instead of OrderItem??-ask prof
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Order> Orders { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

@@ -30,8 +30,7 @@ namespace Desert.Banjo.Api.Controllers
             return NotFound();
            }
            return Ok();
-            /*var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
-            item.Id = id;*/
+       
         }
 
         [HttpPost]
