@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Desert.Banjo.Data;
 using Desert.Banjo.Domain.Orders;
 
-namespace Desert_Banjo.Api.Controllers
+namespace Desert.Banjo.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
