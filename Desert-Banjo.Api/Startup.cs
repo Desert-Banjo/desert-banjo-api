@@ -5,9 +5,13 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Desert.Banjo.Data;
+using Microsoft.Build.Framework;
+using Microsoft.Extensions.Options;
+
 
 namespace Desert.Banjo.Api
 {
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -17,12 +21,21 @@ namespace Desert.Banjo.Api
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = WebApplication.CreateBuilder();
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
-            services.AddDbContext<StoreContext>(options => 
-                options.UseSqlite("Data Source=../Registrar.sqlite", 
+           builder.Services.AddDbContext<StoreContext>(options =>
+                options.UseSqlite("Data Source=../Registrar.sqlite",
                     b => b.MigrationsAssembly("Desert.Banjo.Api")));
+                builder.Services.AddCors(Options => {
+                    Options.AddDefaultPolicy(builder =>{
+                        builder.WithOrigins("http://localhose:3000")
+                        .AllowAnyHeader()
+                        .AllowAnyHeader();
+                    });
+                });
+                builder.Services.AddEndpointsApiExplorer();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -33,14 +46,15 @@ namespace Desert.Banjo.Api
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json",
 "Desert.Banjo.Api v1"));
             }
+            app.UseCors();
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                
+
             });
         }
-     }
+    }
 }

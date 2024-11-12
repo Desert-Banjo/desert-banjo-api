@@ -2,9 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Desert.Banjo.Domain.Catalog;
 using Desert.Banjo.Data;
+using Microsoft.AspNetCore.Cors;
 
 namespace Desert.Banjo.Api.Controllers
 {
+    [EnableCors]
     [ApiController]
     [Route("[controller]")]
     public class CatalogController : ControllerBase
