@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Cors;
 
 namespace Desert.Banjo.Api.Controllers
 {
-    [EnableCors]
     [ApiController]
     [Route("[controller]")]
     public class CatalogController : ControllerBase

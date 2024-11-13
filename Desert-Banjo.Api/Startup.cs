@@ -21,21 +21,21 @@ namespace Desert.Banjo.Api
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            var builder = WebApplication.CreateBuilder();
+        
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
-           builder.Services.AddDbContext<StoreContext>(options =>
+           services.AddDbContext<StoreContext>(options =>
                 options.UseSqlite("Data Source=../Registrar.sqlite",
                     b => b.MigrationsAssembly("Desert.Banjo.Api")));
-                builder.Services.AddCors(Options => {
+                services.AddCors(Options => {
                     Options.AddDefaultPolicy(builder =>{
                         builder.WithOrigins("http://localhose:3000")
                         .AllowAnyHeader()
                         .AllowAnyHeader();
                     });
                 });
-                builder.Services.AddEndpointsApiExplorer();
+                services.AddEndpointsApiExplorer();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
